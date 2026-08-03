@@ -1,0 +1,86 @@
+/***** LOCAL FONTS *****/
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter-v20-latin-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter-v20-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/inter-v20-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/***** GLOBAL STYLES *****/
+:root {
+    --color-background: #F8FAFC;
+    --color-text-primary: #1E293B;
+    --color-text-secondary: #64748B;
+    --color-title: #046861;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+/***** TYPOGRAPHY *****/
+h1, h2, h3, p, ul {
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    color: var(--color-title);
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--color-title);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+p {
+    margin: 0;
+}
+
+strong {
+    color: var(--color-text-primary);
+}
