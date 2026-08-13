@@ -145,7 +145,7 @@ ul {
 .resume-title p {
     color: var(--color-text-secondary);
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: lighter;
     margin: 0 0 0.5rem;
 }
 
@@ -204,4 +204,37 @@ address {
 /***** SECTION | EXPERIENCE *****/
 .job p {
     color: var(--color-text-primary);
+}
+
+/***** MEDIA QUERIES *****/
+@media (max-width: 640px) {
+    main {
+        padding: 1rem 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .resume-title p {
+        font-size: 1.5rem;
+    }
+
+    .contact-info ul {
+        gap: 1rem;
+        margin-top: 0.75rem;
+    }
+
+    section {
+        margin: 1.25rem 0;
+    }
+
+    .link-primary {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.9rem;
+    }
 }
