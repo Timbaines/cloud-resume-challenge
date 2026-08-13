@@ -11,43 +11,21 @@
     <title>Timothy Baines - Website Manager | Frontend Developer</title>
 </head>
 <body>
-<main role="main">
+<main>
     <!-- HEADER -->
-    <header class="header">
-        <div class="resume-title" role="banner">
+    <header class="header" role="banner">
+        <div class="resume-title">
             <h1>Timothy W. Baines</h1>
             <p>Website Manager</p>
         </div>
-        <div class="contact-info">
-            <div>
-                <strong>Location:</strong> Virginia Beach, VA
-            </div>
-            <span>|</span>
-            <div>
-                <strong>Email:</strong>
-                <a href="mailto:timbaines@timbaines.com" rel="noopener noreferrer">timbaines@timbaines.com</a>
-            </div>
-            <span>|</span>
-            <div>
-                <strong>Phone:</strong>
-                <a href="tel:757-377-9930" rel="noopener noreferrer">757-377-9930</a>
-            </div>
-            <span>|</span>
-            <div>
-                <strong>Portfolio:</strong>
-                <a href="https://timbaines.dev" target="_blank" rel="noopener noreferrer">timbaines.dev</a>
-            </div>
-            <span>|</span>
-            <div>
-                <strong>LinkedIn:</strong>
-                <a href="https://linkedin.com/in/tim-baines-dev" target="_blank" rel="noopener noreferrer">linkedin.com/in/tim-baines-dev</a>
-            </div>
-            <span>|</span>
-            <div>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/Timbaines" target="_blank" rel="noopener noreferrer">github.com/Timbaines</a>
-            </div>
-        </div>
+        <address class="contact-info">
+            <ul>
+                <li><a href="mailto:timbaines@timbaines.com" rel="noopener noreferrer">Email</a></li>
+                <li><a href="https://timbaines.dev" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+                <li><a href="https://linkedin.com/in/tim-baines-dev" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/Timbaines" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </address>
     </header>
 
     <!-- SECTION | SUMMARY -->
@@ -61,54 +39,55 @@
     <section class="section">
         <h2>Skills</h2>
         <hr>
-        <div class="skills-container">
-            <h3>Languages:</h3>
-            <ul class="skills-list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-        <div class="skills-container">
-            <h3>Frontend Technologies:</h3>
-            <ul class="skills-list">
-                <li>React</li>
-                <li>Tailwind CSS</li>
-                <li>Responsive Design</li>
-            </ul>
-        </div>
-        <div class="skills-container">
-            <h3>CMS & Frameworks:</h3>
-            <ul class="skills-list">
-                <li>WordPress</li>
-                <li>Bootstrap</li>
-                <li>Next.js</li>
-            </ul>
-        </div>
-        <div class="skills-container">
-            <h3>Tools:</h3>
-            <ul class="skills-list">
-                <li>Vite</li>
-                <li>Git/GitHub</li>
-                <li>Google Analytics</li>
-            </ul>
-        </div>
-        <div class="skills-container">
-            <h3>Performance & SEO:</h3>
-            <ul class="skills-list">
-                <li>Core Web Vitals optimization</li>
-                <li>Page Speed Insights</li>
-                <li>Accessibility (WCAG)</li>
-            </ul>
-        </div>
-        <div class="skills-container">
-            <h3>Design Software:</h3>
-            <ul class="skills-list">
-                <li>Figma</li>
-                <li>Adobe Creative Cloud</li>
-                <li>Affinity Suite</li>
-            </ul>
-        </div>
+        <ul class="skills-list">
+            <li>
+                <strong>Languages:</strong>
+                <span>HTML5,</span>
+                <span>CSS3,</span>
+                <span>JavaScript</span>
+            </li>
+        </ul>
+        <ul class="skills-list">
+            <li>
+                <strong>Frontend Technologies:</strong>
+                <span>React,</span>
+                <span>Tailwind CSS,</span>
+                <span>Responsive Design</span>
+            </li>
+        </ul>
+        <ul class="skills-list">
+            <li>
+                <strong>CMS & Frameworks:</strong>
+                <span>WordPress,</span>
+                <span>Bootstrap,</span>
+                <span>Astro,</span>
+                <span>Next.js</span>
+            </li>
+        </ul>
+        <ul class="skills-list">
+            <li>
+                <strong>Tools:</strong>
+                <span>Vite,</span>
+                <span>Git/GitHub,</span>
+                <span>Google Analytics</span>
+            </li>
+        </ul>
+        <ul class="skills-list">
+            <li>
+                <strong>Performance & SEO:</strong>
+                <span>Core Web Vitals optimization,</span>
+                <span>Page Speed Insights,</span>
+                <span>Accessibility (WCAG)</span>
+            </li>
+        </ul>
+        <ul class="skills-list">
+            <li>
+                <strong>Design Software:</strong>
+                <span>Figma,</span>
+                <span>Adobe Creative Cloud,</span>
+                <span>Affinity Suite</span>
+            </li>
+        </ul>
     </section>
 
     <!-- SECTION | EXPERIENCE -->
@@ -118,7 +97,7 @@
         <!-- JOB 1 -->
         <article class="job">
             <h3>Friends In Action International</h3>
-            <p>Webmaster | Part-Time Associate | <time datetime="2021-01">2021 - Present</time></p>
+            <p>Webmaster, Part-Time Associate <span class="secondary-text">| <time datetime="2021-01">2021 - Present</time></span></p>
             <ul>
                 <li>Managed technical support requests and executed rapid landing page updates via email, delivering monthly content modifications and formatting per stakeholder requirements while maintaining brand consistency, troubleshooting HTML/CSS issues, training team members on CMS functionality.</li>
                 <li>Achieved 96%+ performance and accessibility scores (Google Lighthouse), ensuring WCAG compliance and best practices for nonprofit's diverse international audience.</li>
@@ -128,7 +107,7 @@
         <!-- JOB 2 -->
         <article class="job">
             <h3>1040Visions</h3>
-            <p>Frontend Developer | Website Manager | <time datetime="2021-01">2021 - Present</time></p>
+            <p>Frontend Developer, Website Manager <span class="secondary-text">| <time datetime="2021-01">2021 - Present</time></span></p>
             <ul>
                 <li>Provided ongoing WordPress technical support including plugin updates, content uploads, troubleshooting HTML/CSS issues, and routine website maintenance ensuring consistent site performance and uptime.
                 </li>
@@ -141,7 +120,7 @@
         <!-- JOB 3 -->
         <article class="job">
             <h3>BAZ VA Mission</h3>
-            <p>UI Developer | Project Manager | <time datetime="2019-01">2019 - Present</time></p>
+            <p>UI Developer, Project Manager <span class="secondary-text">| <time datetime="2019-01">2019 - Present</time></span></p>
             <ul>
                 <li>Led cross-functional volunteer teams through project planning cycles, managing technical request backlog, prioritizing high-impact website updates, and coordinating with stakeholders to align technical solutions with organizational goals.
                 </li>
@@ -154,7 +133,7 @@
         <!-- JOB 4 -->
         <article class="job">
             <h3>Suffolk Cleaning Services</h3>
-            <p>Frontend Developer | <time datetime="2017-01">2017 - Present</time></p>
+            <p>Frontend Developer <span class="secondary-text">| <time datetime="2017-01">2017 - Present</time></span></p>
             <ul>
                 <li>Provided continuous website support and maintenance for 7+ years, executing content updates,
                     troubleshooting HTML/CSS issues, optimizing conversion-focused landing pages, and resolving technical issues that generated consistent service inquiries.
@@ -168,7 +147,7 @@
         <!-- JOB 5 -->
         <article class="job">
             <h3>Crest Foodservice Equipment</h3>
-            <p>Graphic Designer | <time datetime="2017-01">2017 - 2018</time></p>
+            <p>Graphic Designer <span class="secondary-text">| <time datetime="2017-01">2017 - 2018</time></span></p>
             <ul>
                 <li>Created graphics for web and print advertising campaigns using Adobe Creative Cloud (Photoshop, Illustrator), designing marketing materials including flyers, banners, landing pages, and product catalogs for commercial kitchen equipment industry.
                 </li>
@@ -185,8 +164,8 @@
         <!-- PROJECT 1 -->
         <article class="project">
             <h3>Resume.js</h3>
-            <p>A dynamic resume website that stores content in a JSON file and renders each section with vanilla JavaScript modules. Built to help developers create a shareable online resume without hardcoding page content.</p>
-            <a class="link-primary" href="https://github.com" target="_blank" rel="noopener noreferrer">View Project</a>
+            <p>A resume page built with vanilla JavaScript that turns a JSON file into a dynamic, shareable web application to expand your online presence.</p>
+            <a class="link-primary" href="https://timbaines.github.io/resume-js/" target="_blank" rel="noopener noreferrer">View Project</a>
         </article>
     </section>
 
@@ -196,7 +175,7 @@
         <hr>
         <article class="education">
             <h3>Radford University</h3>
-            <p>Bachelor of Science, Communications</p>
+            <p><strong>Degree:</strong> Bachelor of Science, Communications</p>
             <p><strong>Minor:</strong> Marketing</p>
         </article>
     </section>
@@ -208,17 +187,17 @@
         <!-- CERTIFICATION 1 -->
         <article class="certification">
             <h3>Frontend Developer Career Path</h3>
-            <p>Scrimba | <time datetime="2024-10">October 2024</time></p>
+            <p class="secondary-text">Scrimba | <time datetime="2024-10">October 2024</time></p>
         </article>
         <!-- CERTIFICATION 2 -->
         <article class="certification">
             <h3>Fullstack Developer Career Path</h3>
-            <p>Scrimba | <time datetime="2024-10">In Progress</time></p>
+            <p class="secondary-text">Scrimba | <time datetime="2024-10">In Progress</time></p>
         </article>
         <!-- CERTIFICATION 3 -->
         <article class="certification">
-            <h3>Workshop Presenter: Git On The Trail - A Workshop on Version Control Basics</h3>
-            <p>Norfolk.js | <time datetime="2025-09">September 2025</time></p>
+            <h3>Workshop Presenter: Git On The Trail - Version Control Basics</h3>
+            <p class="secondary-text">Norfolk.js | <time datetime="2025-09">September 2025</time></p>
         </article>
     </section>
 
@@ -229,12 +208,14 @@
         <!-- ACHIEVEMENT 1 -->
         <article class="achievement">
             <h3>Divi Pixel Customer Showcase</h3>
-            <p>Friends In Action International website featured in Divi Pixel's Customer Showcase | <time datetime="2024-09">September 2024</time></p>
+            <p>Friends In Action International website featured in Divi Pixel's Customer Showcase</p>
+            <p class="secondary-text"><time datetime="2024-09">September 2024</time></p>
         </article>
         <!-- ACHIEVEMENT 2 -->
         <article class="achievement">
             <h3>FE&S Magazine</h3>
-            <p>Contributed to Camp Grom charity project recognized in Foodservice Equipment & Supplies Magazine | <time datetime="2018-03">March 2018</time></p>
+            <p>Contributed to Camp Grom charity project recognized in Foodservice Equipment & Supplies Magazine</p>
+            <p class="secondary-text"><time datetime="2018-03">March 2018</time></p>
         </article>
     </section>
 

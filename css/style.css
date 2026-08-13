@@ -28,7 +28,12 @@
     --color-background: #F8FAFC;
     --color-text-primary: #1E293B;
     --color-text-secondary: #64748B;
+    --color-divider: #E2E8F0;
     --color-title: #046861;
+    --color-text-link: #FFFFFF;
+    --color-accent: #2563EB;
+    --color-accent-hover: #1D4ED8;
+    --color-focus: #0F172A;
 }
 
 *,
@@ -37,6 +42,7 @@
     box-sizing: border-box;
 }
 
+/***** LAYOUT *****/
 body {
     background: var(--color-background);
     color: var(--color-text-primary);
@@ -46,9 +52,13 @@ body {
 }
 
 main {
-    max-width: 1120px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 1.5rem 1rem;
+}
+
+section {
+    margin: 1.75rem 0;
 }
 
 /***** TYPOGRAPHY *****/
@@ -82,5 +92,116 @@ p {
 }
 
 strong {
+    color: var(--color-text-primary);
+}
+
+.secondary-text {
+    color: var(--color-text-secondary);
+}
+
+/***** LINKS *****/
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+}
+
+.link-primary {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-text-link);
+    border-radius: 2rem;
+    padding: 0.45rem 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.link-primary:hover {
+    background: var(--color-accent-hover);
+    text-decoration: none;
+}
+
+/***** DIVIDER *****/
+hr {
+    border: 0;
+    border-top: 2px solid var(--color-divider);
+    margin: 0.75rem 0;
+}
+
+/***** LISTS | UL/LI *****/
+ul {
+    margin: 0.75rem 0;
+    padding-left: 1rem;
+}
+
+/***** SECTION | HEADER *****/
+.resume-title p {
+    color: var(--color-text-secondary);
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 0 0.5rem;
+}
+
+address {
+    font-style: normal;
+}
+
+.contact-info ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    list-style-type: none;
+}
+
+.contact-info li {
+    border-right: 2px solid var(--color-divider);
+    padding-right: 1rem;
+}
+
+.contact-info li:last-child {
+    border-right: none;
+}
+
+.contact-info a {
+    font-weight: 600;
+}
+
+/***** SECTION | SKILLS *****/
+.skills-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.skills-list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li strong {
+    margin-right: 0.25rem;
+}
+
+.skills-list li span {
+    margin-right: 0.25rem;
+    color: var(--color-text-secondary);
+}
+
+/***** SECTION | EXPERIENCE *****/
+.job p {
     color: var(--color-text-primary);
 }
