@@ -12,7 +12,7 @@ This repository documents my journey through the [Cloud Resume Challenge](https:
 
 - [ ] **Certification** — AWS Cloud Practitioner (or higher)
 - [x] **HTML** — Resume webpage markup
-- [ ] **CSS** — Styling for the resume site
+- [x] **CSS** — Styling for the resume site
 - [ ] **Static Website** — Hosted on Amazon S3
 - [ ] **HTTPS** — Served securely via CloudFront
 - [ ] **DNS** — Custom domain configured with Route 53
