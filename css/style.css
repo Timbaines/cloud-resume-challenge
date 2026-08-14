@@ -61,12 +61,16 @@ section {
     margin: 1.75rem 0;
 }
 
+article {
+    margin-top: .5rem;
+}
+
 /***** TYPOGRAPHY *****/
 h1, h2, h3, p, ul {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
     margin: 0;
 }
 
@@ -85,10 +89,6 @@ h2 {
 h3 {
     font-size: 1.1rem;
     font-weight: 600;
-}
-
-p {
-    margin: 0;
 }
 
 strong {
@@ -197,11 +197,10 @@ ul {
     color: var(--color-text-secondary);
 }
 
-/***** SECTION | EXPERIENCE *****/
-.job p {
-    color: var(--color-text-primary);
+/***** SECTION | EDUCATION *****/
+.education p {
+    color: var(--color-text-secondary);
 }
-
 /***** MEDIA QUERIES *****/
 @media (max-width: 640px) {
     main {
