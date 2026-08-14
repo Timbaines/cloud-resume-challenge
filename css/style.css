@@ -149,10 +149,6 @@ ul {
     margin: 0 0 0.5rem;
 }
 
-address {
-    font-style: normal;
-}
-
 .contact-info ul {
     display: flex;
     flex-direction: row;
