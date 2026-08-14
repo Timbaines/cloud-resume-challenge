@@ -13,9 +13,9 @@ This repository documents my journey through the [Cloud Resume Challenge](https:
 - [ ] **Certification** — AWS Cloud Practitioner (or higher)
 - [x] **HTML** — Resume webpage markup
 - [x] **CSS** — Styling for the resume site
-- [ ] **Static Website** — Hosted on Amazon S3
-- [ ] **HTTPS** — Served securely via CloudFront
-- [ ] **DNS** — Custom domain configured with Route 53
+- [x] **Static Website** — Hosted on Amazon S3
+- [x] **HTTPS** — Served securely via CloudFront
+- [x] **DNS** — Custom domain configured with Route 53 **(Configured with Hostinger)**
 - [ ] **JavaScript** — Visitor counter functionality
 - [ ] **Database** — DynamoDB table for visitor count
 - [ ] **API** — API Gateway endpoint
