@@ -34,6 +34,7 @@
     --color-accent: #2563EB;
     --color-accent-hover: #1D4ED8;
     --color-focus: #0F172A;
+    --shadow-md: 0 0 1rem 0 rgba(0, 0, 0, .25);
 }
 
 *,
@@ -201,6 +202,34 @@ ul {
 .education p {
     color: var(--color-text-secondary);
 }
+
+/***** SECTION | FOOTER *****/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.counter-container {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10;
+}
+
+.counter {
+    background: var(--color-accent);
+    color: var(--color-text-link);
+    border-radius: 2rem;
+    padding: 0.25rem 0.75rem;
+    box-shadow: var(--shadow-md);
+}
+
+.counter span {
+    margin-right: .25rem;
+}
+
 /***** MEDIA QUERIES *****/
 @media (max-width: 640px) {
     main {
@@ -230,6 +259,10 @@ ul {
 
     .link-primary {
         padding: 0.4rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .counter {
         font-size: 0.9rem;
     }
 }
