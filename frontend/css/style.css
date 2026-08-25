@@ -1,7 +1,7 @@
 /***** LOCAL FONTS *****/
 @font-face {
     font-family: 'Inter';
-    src: url('../assets/fonts/inter-v20-latin-300.woff2') format('woff2');
+    src: url('../../assets/fonts/inter-v20-latin-300.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('../assets/fonts/inter-v20-latin-regular.woff2') format('woff2');
+    src: url('../../assets/fonts/inter-v20-latin-regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('../assets/fonts/inter-v20-latin-600.woff2') format('woff2');
+    src: url('../../assets/fonts/inter-v20-latin-600.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -25,16 +25,17 @@
 
 /***** GLOBAL STYLES *****/
 :root {
-    --color-background: #F8FAFC;
-    --color-text-primary: #1E293B;
-    --color-text-secondary: #64748B;
+    --color-bg: #F8FAFC;
+    --color-bg-counter: #1F3A5F;
+    --color-text: #1E293B;
+    --color-text-muted: #64748B;
     --color-divider: #E2E8F0;
-    --color-title: #046861;
-    --color-text-link: #FFFFFF;
+    --color-heading: #1F3A5F;
+    --color-link: #FFFFFF;
     --color-accent: #2563EB;
     --color-accent-hover: #1D4ED8;
     --color-focus: #0F172A;
-    --shadow-md: 0 0 1rem 0 rgba(0, 0, 0, .25);
+    --shadow: 0 0 1rem 0 rgba(0, 0, 0, .20);
 }
 
 *,
@@ -45,8 +46,8 @@
 
 /***** LAYOUT *****/
 body {
-    background: var(--color-background);
-    color: var(--color-text-primary);
+    background: var(--color-bg);
+    color: var(--color-text);
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
@@ -76,13 +77,13 @@ h1, h2, h3, p {
 }
 
 h1 {
-    color: var(--color-title);
+    color: var(--color-heading);
     font-size: 2.25rem;
     font-weight: 600;
 }
 
 h2 {
-    color: var(--color-title);
+    color: var(--color-heading);
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -93,11 +94,11 @@ h3 {
 }
 
 strong {
-    color: var(--color-text-primary);
+    color: var(--color-text);
 }
 
 .secondary-text {
-    color: var(--color-text-secondary);
+    color: var(--color-text-muted);
 }
 
 /***** LINKS *****/
@@ -118,7 +119,7 @@ a:focus {
 .link-primary {
     display: inline-block;
     background: var(--color-accent);
-    color: var(--color-text-link);
+    color: var(--color-link);
     border-radius: 2rem;
     padding: 0.45rem 0.75rem;
     margin-top: 0.5rem;
@@ -144,7 +145,7 @@ ul {
 
 /***** SECTION | HEADER *****/
 .resume-title p {
-    color: var(--color-text-secondary);
+    color: var(--color-text-muted);
     font-size: 2rem;
     font-weight: lighter;
     margin: 0 0 0.5rem;
@@ -195,12 +196,12 @@ ul {
 
 .skills-list li span {
     margin-right: 0.25rem;
-    color: var(--color-text-secondary);
+    color: var(--color-text-muted);
 }
 
 /***** SECTION | EDUCATION *****/
 .education p {
-    color: var(--color-text-secondary);
+    color: var(--color-text-muted);
 }
 
 /***** SECTION | FOOTER *****/
@@ -219,15 +220,12 @@ ul {
 }
 
 .counter {
-    background: var(--color-accent);
-    color: var(--color-text-link);
+    background: var(--color-bg-counter);
+    color: var(--color-link);
     border-radius: 2rem;
     padding: 0.25rem 0.75rem;
-    box-shadow: var(--shadow-md);
-}
-
-.counter span {
-    margin-right: .25rem;
+    box-shadow: var(--shadow);
+    cursor: default;
 }
 
 /***** MEDIA QUERIES *****/
@@ -262,7 +260,9 @@ ul {
         font-size: 0.9rem;
     }
 
-    .counter {
+    .counter-container {
+        right: 0.75rem;
+        bottom: 0.75rem;
         font-size: 0.9rem;
     }
 }
