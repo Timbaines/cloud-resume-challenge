@@ -15,11 +15,11 @@ This repository documents my journey through the [Cloud Resume Challenge](https:
 - [x] **CSS** — Styling for the resume site
 - [x] **Static Website** — Hosted on Amazon S3
 - [x] **HTTPS** — Served securely via CloudFront
-- [x] **DNS** — Custom domain configured with Route 53 **(Configured with Hostinger)**
-- [ ] **JavaScript** — Visitor counter functionality
-- [ ] **Database** — DynamoDB table for visitor count
-- [ ] **API** — API Gateway endpoint
-- [ ] **Python** — Lambda function for visitor count logic
+- [x] **DNS** — Custom domain configured with Hostinger
+- [x] **JavaScript** — Visitor counter functionality
+- [x] **Database** — DynamoDB table for visitor count
+- [x] **API** — API Gateway endpoint
+- [x] **Python** — Lambda function for visitor count logic
 - [ ] **Tests** — Unit tests for Lambda function
 - [ ] **Infrastructure as Code** — Backend defined via SAM / CDK / CloudFormation / Terraform
 - [ ] **Source Control** — Code hosted on GitHub
@@ -31,7 +31,7 @@ This repository documents my journey through the [Cloud Resume Challenge](https:
 - [ ] Integration tests
 - [ ] Infrastructure testing
 - [ ] CloudWatch monitoring/alerting
-- [ ] Multi-environment (dev/prod) setup
+- [ ] Multienvironment (dev/prod) setup
 
 ---
 
@@ -40,7 +40,7 @@ This repository documents my journey through the [Cloud Resume Challenge](https:
 
 **Tech Stack:**
 - **Frontend:** HTML, CSS, JavaScript
-- **Hosting:** Amazon S3, CloudFront, Route 53
+- **Hosting:** Amazon S3, CloudFront, Hostinger
 - **Backend:** AWS Lambda (Python), API Gateway, DynamoDB
 - **IaC:** (SAM / CDK / Terraform — specify once chosen)
 - **CI/CD:** GitHub Actions
@@ -48,7 +48,17 @@ This repository documents my journey through the [Cloud Resume Challenge](https:
 ---
 
 ## Repository Structure
-
+cloud-resume-challenge/
+├── frontend/
+│   ├── index.html          # Resume Webpage
+│   ├── counter.js          # Visitor counter functionality
+│   └── css/
+│       └── style.css       # Resume Styling
+├── backend/
+│   └── lambda_function.py  # AWS Lambda function for visitor count
+├── assets/                 # Fonts
+├── README.md
+└── .gitignore
 
 ---
 
