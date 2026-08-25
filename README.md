@@ -48,6 +48,7 @@ This repository documents my journey through the [Cloud Resume Challenge](https:
 ---
 
 ## Repository Structure
+```
 cloud-resume-challenge/
 ├── frontend/
 │   ├── index.html          # Resume Webpage
@@ -59,6 +60,7 @@ cloud-resume-challenge/
 ├── assets/                 # Fonts
 ├── README.md
 └── .gitignore
+```
 
 ---
 
