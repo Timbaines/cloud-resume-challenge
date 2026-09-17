@@ -2,6 +2,13 @@
 
 This repository documents my journey through the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/), a hands-on project to build and deploy a cloud-native resume website using AWS services, Infrastructure as Code, and CI/CD pipelines.
 
+**Project Started:** *July 29, 2026*
+
+**Project Completed:**
+
+---
+## Site Links
+
 **Live Site:** [Click to view Cloud Resume Challenge Site](https://timbaines.me)
 
 **Blog Post:** *In Process*
